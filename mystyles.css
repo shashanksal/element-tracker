@@ -1,0 +1,492 @@
+/**
+ * This code is property of
+ * EKA TechServ Pvt. Ltd.
+ * 
+ * Author: Developer Team
+ * Copyright (c) 2016 EKA TechServ Pvt. Ltd.
+ */
+body{
+    color:#000
+}
+input{
+    color:#000
+        /*background : cyan !important;*/
+}
+.el_Tr_options_popover{
+
+
+}
+.el_Tr_close_popover{
+    position:absolute;
+    top:2px;
+    right:2px;
+    font-weight:bol;
+    font-size:15px;
+    font-family:arial;
+    cursor:pointer;
+}
+
+.xpath-select{
+    position:relative;
+}
+.xpath-select > * {
+    height: 1.5em;
+    box-sizing: border-box;
+}
+.css-select{
+    position:relative; 
+}
+.css-select > * {
+    height: 1.5em;
+    box-sizing: border-box;
+}
+
+.el_Tr_options_popover_holder .fld-holder{
+    margin-bottom:10px !important;
+    position: relative;
+}
+.popover.el_Tr_options_popover_holder > .arrow.newTheme{
+    left : 20px !important;
+}
+.popover.el_Tr_options_popover_holder > .arrow.newTheme::after {
+    border-bottom-color: #efefef;
+}
+.eaf-form-control{
+    border: 1px solid #ccc !important ;
+    border-radius: 4px !important;
+}
+.eaf-highlight{
+    box-shadow:0 0 3px 4px #89c4f4 !important;
+    -moz-box-shadow: 0 0 3px 4px #89c4f4 !important;
+    -webkit-box-shadow: 0 0 3px 4px #89c4f4 !important;
+}
+.p-zero{
+    padding : 0 !important;
+}
+.pl-zero{
+    padding-left : 0 !important;
+}
+.pr-zero{
+    padding-right : 0 !important;
+}
+.eafSelect2-container.eafSelect2-container--open{
+    z-index : 2147483546 !important;
+}
+.eaf-btn{
+    border-width: 0;
+    padding: 7px 14px;
+    font-size: 14px;
+    outline: none !important;
+    background-image: none !important;
+    filter: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.eaf-btn.dropdown-toggle, .eaf-btn-group .btn.dropdown-toggle, .eaf-btn:hover, .eaf-btn:disabled, .eaf-btn[disabled], .eaf-btn:focus, .eaf-btn:active, .eaf-btn.active {
+    outline: none !important;
+    background-image: none !important;
+    filter: none;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.eaf-btn-success {
+    color: #fff;
+    background-color: #45B6AF;
+    border-color: #3ea49d;
+}
+.eaf-btn-danger {
+    color: #fff;
+    background-color: #F3565D;
+    border-color: #f13e46;
+}
+.eaf-btn-success:hover, .eaf-btn-success:focus, .eaf-btn-success:active, .eaf-btn-success.active {
+    color: #fff;
+    background-color: #3b9c96;
+    border-color: #307f7a;
+}
+.eaf-btn-danger:hover, .eaf-btn-danger:focus, .eaf-btn-danger:active, .eaf-btn-danger.active {
+    color: #fff;
+    background-color: #f1353d;
+    border-color: #ec111b;
+}
+.eaf-highlight-hover{
+    box-shadow:0 0 3px 4px #F3565D !important;
+    -moz-box-shadow: 0 0 3px 4px #F3565D !important;
+    -webkit-box-shadow: 0 0 3px 4px #F3565D !important;
+}
+.eaf-eafSelect2-popover{
+    background:#ccc;
+}
+.eafSelect2-container *,.el_Tr_options_popover_holder *{
+    font-size:13px;
+}
+.eafSelect2-results__options{
+    width:100%;
+    text-align:left !important;
+    max-height:100px !important;
+}
+.el_Tr_options_popover_holder.popover ~ .eafSelect2-container .eafSelect2-results__option{
+    margin:0px;
+}
+.eafSelect2-container input,.el_Tr_options_popover_holder input{
+    background:#fff !important;
+    height:auto  !important;
+    clear:both  !important;
+    float:none !important;
+}
+
+/******** popover custom style ******/
+.el_Tr_options_popover_holder.popover.bottom {
+    margin-top: 10px;
+}
+.el_Tr_options_popover_holder.fade {
+    opacity: 0;
+    transition: opacity 0.15s linear;
+    -webkit-transition: opacity 0.15s linear;
+}
+.el_Tr_options_popover_holder.fade.in {
+    opacity: 1;
+}
+.el_Tr_options_popover_holder.popover {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    padding: 1px;
+    text-align: left;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-radius: 6px !important;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+    white-space: normal;
+
+    background-color : #efefef !important;
+    min-width : 300px !important;
+    max-width : 300px !important;
+    width : 300px !important
+}
+.el_Tr_options_popover_holder.popover.bottom > .arrow {
+    left: 50%;
+    margin-left: -11px;
+    border-top-width: 0px;
+    border-bottom-color: #666;
+    top: -11px;
+}
+.el_Tr_options_popover_holder.popover > .arrow {
+    border-width: 11px;
+}
+.el_Tr_options_popover_holder.popover > .arrow, .popover > .arrow::after {
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-style: solid;
+}
+.el_Tr_options_popover_holder.popover > .popover-title {
+    margin: 0px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    background-color: rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(235, 235, 235);
+    border-radius: 5px 5px 0px 0px;
+}
+.el_Tr_options_popover_holder.popover  .popover-content {
+    padding: 9px 14px;
+}
+.el_Tr_options_popover_holder.popover .eaf-form-control {
+    border: 1px solid rgb(204, 204, 204) !important;
+    border-image-source: initial !important;
+    border-image-slice: initial !important;
+    border-image-width: initial !important;
+    border-image-outset: initial !important;
+    border-image-repeat: initial !important;
+    border-radius: 4px !important;
+}
+.el_Tr_options_popover_holder.popover .eaf-form-control{
+    display: block !important;
+    width: 100%;
+    height: 34px !important;
+    padding: 6px 8px !important;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    color: rgb(85, 85, 85) !important;
+    background-color: rgb(255, 255, 255) !important;
+    background-image: none !important;
+    border: 1px solid rgb(204, 204, 204) !important;
+    border-image-source: initial !important;
+    border-image-slice: initial !important;
+    border-image-width: initial !important;
+    border-image-outset: initial !important;
+    border-image-repeat: initial !important;
+    border-radius: 4px !important;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px inset !important;
+    box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px inset !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+    -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+    text-align:left !important;
+    /*font-weight:600 !important;*/ 
+}
+
+.el_Tr_options_popover_holder.popover .eaf-form-control-width92{
+    display: block !important;
+    width: 92%;
+    height: 34px !important;
+    padding: 6px 8px !important;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    color: rgb(85, 85, 85) !important;
+    background-color: rgb(255, 255, 255) !important;
+    background-image: none !important;
+    border: 1px solid rgb(204, 204, 204) !important;
+    border-image-source: initial !important;
+    border-image-slice: initial !important;
+    border-image-width: initial !important;
+    border-image-outset: initial !important;
+    border-image-repeat: initial !important;
+    border-radius: 4px !important;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px inset !important;
+    box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px inset !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+    -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+    text-align:left !important;
+    z-index : 1 !important;
+    position: absolute !important;
+    border-right:none !important;
+}
+
+.el_Tr_options_popover_holder.popover  .col-xs-12,.el_Tr_options_popover_holder.popover  .col-xs-6 {
+    float:left ;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.el_Tr_options_popover_holder.popover  .col-xs-12{
+    width: 100%;
+}
+.el_Tr_options_popover_holder.popover  .col-xs-6{
+    width: 50%;
+}
+.el_Tr_options_popover_holder.popover,.el_Tr_options_popover_holder.popover *{
+    box-sizing: border-box;
+}
+.el_Tr_options_popover_holder.popover  input,.el_Tr_options_popover_holder.popover   button,.el_Tr_options_popover_holder.popover   select,.el_Tr_options_popover_holder.popover  textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.el_Tr_options_popover_holder.popover{
+    z-index : 2147483542 !important
+}
+.eaf-persisted-ts-highlight{
+    box-shadow:0 0 3px 4px #1f897f !important;
+}
+.el_Tr_options_popover_holder .fld-holder input.eaf-form-control{
+    padding-right: 35px !important;
+}
+.el_Tr_options_popover_holder .fld-holder .typcn{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size:1.667em;
+}
+.el_Tr_options_popover_holder .fld-holder.valid-success .typcn.typcn-tick{
+    display: block !important;
+    color: #45B6AF;
+    background-image: none;
+    z-index:2;
+}
+.typcn-tick:before {
+    content: '\e11e' !important;
+}
+.el_Tr_options_popover_holder .fld-holder.valid-error .typcn.typcn-warning{
+    display: block;
+    color: #F3565D;
+    z-index:2;
+}
+.el_Tr_options_popover_holder .fld-holder.valid-success input.eaf-form-control{
+    border: 1px solid #45B6AF !important;
+}
+.el_Tr_options_popover_holder .fld-holder.valid-error input.eaf-form-control{
+    border: 1px solid #F3565D !important;
+}
+.el_Tr_options_popover_holder .fld-holder.valid-success .eafSelect2.eafSelect2-container .eafSelect2-selection{
+    border: 1px solid #45B6AF !important;
+}
+.el_Tr_options_popover_holder .fld-holder.valid-error .eafSelect2.eafSelect2-container .eafSelect2-selection{
+    border: 1px solid #F3565D !important;
+}
+.eaf-validation-tipsy{
+    font-size: 12px;
+}
+@-webkit-keyframes alert-shake {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(0.7); }
+    100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes alert-shake {
+    0% { -moz-transform: scale(1); }
+    50% { -moz-transform: scale(0.7); }
+    100% { -moz-transform: scale(1); }
+}
+@keyframes alert-shake {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.7); }
+    100% { transform: scale(1); }
+}
+.alert-shake{
+    -webkit-animation-name: alert-shake;
+    -webkit-animation-duration: 200ms;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: 4;
+    -webkit-animation-timing-function: linear;	
+    -moz-animation-name: alert-shake;
+    -moz-animation-duration: 200ms;
+    -moz-transform-origin:50% 50%;
+    -moz-animation-iteration-count: 4;
+    -moz-animation-timing-function: linear;
+    animation-name: alert-shake;
+    animation-duration: 200ms;
+    transform-origin:50% 50%;
+    animation-iteration-count: 4;
+    animation-timing-function: linear;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@keyframes shake-h {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+.shake-h {
+    -webkit-animation-name: shake-h;
+    -moz-animation-name: shake-h;
+    -o-animation-name: shake-h;
+    animation-name: shake-h;
+}
+#eaf-add-ts-btn-hover{
+    position:fixed !important;
+    width:40px ;
+    height:40px ;
+    border-radius:50px !important;
+    bottom:30px !important;
+    right:30px !important;
+    z-index:2147483546 !important;
+    opacity:1 !important;
+    box-shadow: 2px 2px 5px 0 #777 !important;
+    background: #1f897f !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    transition:.5s !important;
+    line-height: 1 !important;
+    font-family: 'times new roman' !important;
+}
+#eaf-add-ts-btn-hover:hover{
+    background: #1bbc9b;
+}
+#eaf-add-ts-btn-hover label{
+    font-size:40px !important;
+    font-weight:normal !important;
+    position:absolute !important;
+    top:0px !important;
+    left:10px !important;
+    box-shadow:none !important;
+    cursor: pointer !important;
+    font-family: 'times new roman' !important;
+    line-height: 1 !important;
+    color:#fff !important;
+    padding:0px !important;
+    text-align: -webkit-auto !important;
+}
+.popover.el_Tr_options_popover_holder{
+    z-index : 2147483542 !important;
+    background : #efefef !important;
+    min-width : 300px !important;
+    /*min-height : 257px */
+}
+/*#eaf-add-ts-btn-hover+.popover.el_Tr_options_popover_holder{
+        min-height : 175px
+}*/
+.eafSelect2-container--default .eafSelect2-results > .eafSelect2-results__options {
+    max-height: 200px;
+    overflow-y: auto;
+    text-align:left !important;
+    color: #454545 !important
+}
+.eafSelect2-results {
+    text-align:left !important;
+}
+.fa-warning::before, .fa-exclamation-triangle::before{
+    content: "\f071" !important;
+}
+.fld-holder span, span .eafSelect2-search , span.eafSelect2-results{
+    display: block;
+    margin-right: auto;
+    text-align: inherit;
+}
+.eafSelect2-container--default .eafSelect2-selection--single , .eafSelect2-dropdown{
+    border-radius: 4px !important;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#d3d3d3 !important;
+}
+.height257{
+    height: 257px !important;
+}
+i.fa-check:before{
+    content:"\f00c" !important;
+}
+ul li.eafSelect2-results__option{
+    float: none;
+    text-align: left;
+    display: block;
+    font-weight: 600 !important;
+}
+.typcn.typcn-lg.typcn-warning ,.typcn.typcn-lg.typcn-tick{
+    cursor: default;
+}
+.eafSelect2-selection__rendered,.eafSelect2-selection__placeholder,.inpt-selector-value,.test-step-name{
+    font-weight:600 !important;
+}
+.typcn.typcn-export{
+    color: #FF3030;
+    bottom:30px
+}

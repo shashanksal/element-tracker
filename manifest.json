@@ -1,0 +1,30 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": ["UserAgentJsonValues.js" ,"background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "logo_48.png",
+      "default_title": "Test Odyssey Extension"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+	  "css": [ "select2.css","tipsy.css","jquery-ui.min.css","mystyles.css"],
+      
+      "js": ["jquery-2.1.4.min.js" , "bootstrap.popover.min.js", "select2.js","jquery.tipsy.js", "jquery-ui.min.js","myscript.js","css_path_provider.js"],
+      "matches": [ "*://*/*" ]  
+   } ],
+   "description": "Captures object properties for web automation over Test Odyssey.",
+   "icons": {
+      "128": "logo_128.png",
+      "16": "logo_16.png",
+      "48": "logo_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsvNO3klm6KLWNsAAJtec+H0IccDRn65DyHNP2oTfKG1SR+t2KgOBpg58hSGeW5/KN5zAHoHxGYPK4DWZKMHPy0LWTacOnCC188DoOsf1TkXelI+sDsgdP9WlqTxxUcioBJzYYxc7B8ZUEsoZb1g/BMdwF7LRVbttBsBeYcbQELB5y2nZHeop5t660Tc1RgRDlkC3oVQ2twjJRFTqkVYqKagNQ/xjd7XqYJgMeyWwm67zJgfC5ZtwWIdl6TUWKf6zLviCaz5LVCZ7WFhOEgbfAn0/4UbxeMfd2FLkoZeA74TdbOAVTdpXpBYI1NLNVqxV/ikCK61KsP2K0AlooPovJwIDAQAB",
+   "manifest_version": 2,
+   "name": "TestOdyssey Tracker",
+   "permissions": [ "activeTab", "tabs", "webRequest", "webRequestBlocking", "*://*/eaf*", "*://test-odyssey.com/record*","*://ekatechserv.co.in/record*","*://*.test-odyssey.com/record*"],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.0.0.0",
+   "web_accessible_resources": [ "template.html", "mystyles.css", "/typicons.font-2.0.7/typicons.css", "/typicons.font-2.0.7/typicons.ttf", "/typicons.font-2.0.7/typicons.woff", "/font-awesome/fonts/fontawesome-webfont.woff" ]
+}
