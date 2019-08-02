@@ -1,9 +1,8 @@
 /**
- * This code is property of
- * EKA TechServ Pvt. Ltd.
+ *
  * 
- * Author: Developer Team
- * Copyright (c) 2016 EKA TechServ Pvt. Ltd.
+ * Author: Shashank Salunkhe
+ * 
  */
 
 ;
